@@ -1,14 +1,4 @@
-PROCEDURE  Insertion_Sort (var arr: array_of_integer)
-VAR
-    i,j,current := INTEGER;
-BEGIN
-    FOR i FROM 1 TO arr.length-1 DO
-        current := arr[i];
-        j := i-1;
-        WHILE (j >= 0 and arr[i] > current[i]) DO
-            arr[j+1] := arr[j];
-            j := j-1;
-        END_WHILE
-        arr[j+1] := current;
-    END_FOR
-END
+Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands. Each time we take a new card we put it in the right place in our hand.
+
+
+
